@@ -1,0 +1,31 @@
+<!doctype HTML>
+<html>
+<head>
+<title>MusicBot</title>
+<script type="text/javascript" language="javascript" src="UIElement.js"></script>
+<script type="text/javascript" language="javascript" src="ImagePushButton.js"></script>
+<script type="text/javascript" language="javascript" src="StaticImage.js"></script>
+<script type="text/javascript" language="javascript" src="StaticLabel.js"></script>
+<script type="text/javascript" language="javascript" src="RatingWidget.js"></script>
+<script type="text/javascript" language="javascript" src="LinkText.js"></script>
+<script type="text/javascript" language="javascript" src="ControlBarView.js"></script>
+<script type="text/javascript" language="javascript" src="FilterControl.js"></script>
+<script type="text/javascript" language="javascript" src="ListControl.js"></script>
+<script type="text/javascript" language="javascript" src="ListView.js"></script>
+<script type="text/javascript" language="javascript" src="TriListView.js"></script>
+<script type="text/javascript" language="javascript" src="DetailsView.js"></script>
+<script type="text/javascript" language="javascript" src="MainUIView.js"></script>
+<script type="text/javascript" language="javascript">
+function initAll()
+{
+	mainView = new MainUIView();
+	mainView.render(document.body);
+	window.onresize=function() {
+		mainView.render(document.body);
+	};
+}
+</script>
+</head>
+<body onload="initAll();">
+</body>
+<html>
